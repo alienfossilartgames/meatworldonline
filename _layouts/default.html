@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Pulls the title from the page's Front Matter, or defaults to Meatworld -->
+  <title>{{ page.title | default: "MEATWORLD" }}</title>
+  
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Your Custom Styles -->
+  <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<!-- Flexbox classes here ensure the footer always stays at the bottom of the screen -->
+<body class="d-flex flex-column min-vh-100">
+
+  <!-- 1. INJECT THE NAVBAR -->
+  {% include navbar.html %}
+
+  <!-- 2. INJECT THE SPECIFIC PAGE CONTENT -->
+  <main class="flex-grow-1">
+    {{ content }}
+  </main>
+
+  <!-- 3. INJECT THE FOOTER -->
+  {% include footer.html %}
+
+  <!-- Bootstrap 5.3 JS Bundle (Required for mobile menu) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

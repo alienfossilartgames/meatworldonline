@@ -1,0 +1,89 @@
+/* --- HERO SECTION --- */
+.hero-section {
+  /* Replace 'hero-bg.jpg' with a dark, gritty piece of environment art */
+  background: linear-gradient(to bottom, rgba(10, 10, 10, 0.6), var(--mw-black)), url('/assets/hero-bg.jpg') center/cover no-repeat;
+  min-height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid var(--mw-purple);
+}
+
+.hero-title {
+  font-family: 'Bebas Neue', sans-serif;
+  color: var(--mw-white);
+  font-size: clamp(4rem, 10vw, 8rem);
+  letter-spacing: 4px;
+  text-shadow: 4px 4px 0px var(--mw-red); /* Harsh red shadow for impact */
+  margin-bottom: 0;
+}
+
+.hero-subtitle {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--mw-silver);
+  letter-spacing: 3px;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+/* --- CUSTOM BUTTONS --- */
+.btn-custom-red {
+  background-color: var(--mw-red);
+  color: var(--mw-white);
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  padding: 0.75rem 2.5rem;
+  border: 2px solid var(--mw-red);
+  border-radius: 0; /* Sharp, blocky corners */
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-custom-red:hover {
+  background-color: transparent;
+  color: var(--mw-red);
+  box-shadow: 0 0 15px rgba(200, 16, 46, 0.5);
+}
+
+.btn-outline-silver {
+  color: var(--mw-silver);
+  border: 2px solid var(--mw-silver);
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.25rem;
+  letter-spacing: 1.5px;
+  padding: 0.5rem 2rem;
+  border-radius: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-outline-silver:hover {
+  background-color: var(--mw-silver);
+  color: var(--mw-black);
+}
+
+/* --- PILLAR CARDS --- */
+.pillar-card {
+  background-color: #121212;
+  border: 1px solid #2a2a2a;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.pillar-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--mw-purple);
+  box-shadow: 0 10px 20px rgba(92, 46, 126, 0.15); /* Purple glow on hover */
+}
+
+.pillar-title {
+  font-family: 'Bebas Neue', sans-serif;
+  color: var(--mw-red);
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  margin-bottom: 1.5rem;
+}
+
+.pillar-text {
+  color: var(--mw-silver);
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
