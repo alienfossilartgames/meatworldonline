@@ -1,4 +1,123 @@
-/* --- HERO SECTION --- */
+/* --- GOOGLE FONTS --- */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* --- MEATWORLD COLOR PALETTE --- */
+:root {
+  --mw-black: #0a0a0a;
+  --mw-red: #c8102e;
+  --mw-silver: #c0c0c0;
+  --mw-purple: #5c2e7e;
+  --mw-white: #ffffff;
+}
+
+/* --- GLOBAL BODY STYLES --- */
+body {
+  background-color: var(--mw-black);
+  color: var(--mw-silver);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+
+/* --- NAVBAR STYLING --- */
+.navbar-custom {
+  background-color: var(--mw-black);
+  border-bottom: 2px solid var(--mw-purple);
+  box-shadow: 0 4px 10px rgba(92, 46, 126, 0.3); /* Subtle purple glow */
+}
+
+.nav-logo {
+  height: 45px;
+  width: auto;
+}
+
+/* Clean Block Font for Links */
+.navbar-custom .nav-link {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 1.5px;
+  color: var(--mw-silver) !important;
+  padding: 0.5rem 1rem !important;
+  transition: color 0.2s ease-in-out;
+}
+
+/* Hover States */
+.navbar-custom .nav-link:hover,
+.navbar-custom .nav-link:focus {
+  color: var(--mw-red) !important;
+}
+
+/* Mobile Hamburger Button Styling */
+.custom-toggler {
+  border-color: var(--mw-silver);
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28192, 192, 192, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.custom-toggler:focus {
+  box-shadow: 0 0 0 0.25rem rgba(192, 192, 192, 0.25);
+}
+
+/* Mobile Menu Dropdown Tweaks */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    background-color: #141414;
+    padding: 1rem;
+    border: 1px solid var(--mw-purple);
+    border-top: none;
+    margin-top: 0.5rem;
+  }
+  .navbar-custom .nav-link {
+    border-bottom: 1px solid rgba(92, 46, 126, 0.3);
+  }
+  .navbar-custom .nav-link:last-child {
+    border-bottom: none;
+  }
+}
+
+/* --- FOOTER STYLING --- */
+.footer-custom {
+  background-color: var(--mw-black);
+  border-top: 2px solid var(--mw-red); /* Balances the purple navbar */
+  padding: 1.5rem 1rem;
+  box-shadow: 0 -4px 10px rgba(200, 16, 46, 0.15); /* Adds a faint red glow upwards */
+}
+
+/* Legal Links Styling (Matches Navbar Font) */
+.footer-custom .footer-link {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.25rem;
+  letter-spacing: 1.5px;
+  color: var(--mw-silver);
+  text-decoration: none;
+  margin-left: 1.5rem;
+  transition: color 0.2s ease-in-out;
+}
+
+/* Stack spacing for mobile links */
+@media (max-width: 767.98px) {
+  .footer-custom .footer-link {
+    margin: 0 0.75rem;
+    display: inline-block;
+  }
+}
+
+/* Hover State */
+.footer-custom .footer-link:hover,
+.footer-custom .footer-link:focus {
+  color: var(--mw-purple); /* Hover to purple to contrast the red border */
+}
+
+/* Copyright Text */
+.copyright-text {
+  color: var(--mw-silver);
+  opacity: 0.7;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+/* --- HOMEPAGE: HERO SECTION --- */
 .hero-section {
   /* Replace 'hero-bg.jpg' with a dark, gritty piece of environment art */
   background: linear-gradient(to bottom, rgba(10, 10, 10, 0.6), var(--mw-black)), url('/assets/hero-bg.jpg') center/cover no-repeat;
@@ -61,7 +180,7 @@
   color: var(--mw-black);
 }
 
-/* --- PILLAR CARDS --- */
+/* --- HOMEPAGE: PILLAR CARDS --- */
 .pillar-card {
   background-color: #121212;
   border: 1px solid #2a2a2a;
