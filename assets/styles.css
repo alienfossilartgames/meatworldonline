@@ -206,3 +206,66 @@ body {
   font-size: 1.1rem;
   line-height: 1.6;
 }
+
+/* --- LORE HUB NAV-PILLS --- */
+.nav-pills-custom .nav-link {
+  color: var(--mw-silver);
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 1.5px;
+  border-radius: 0;
+  border: 1px solid transparent;
+  transition: all 0.2s ease-in-out;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.nav-pills-custom .nav-link:hover {
+  color: var(--mw-red);
+  border-color: var(--mw-purple);
+  background-color: rgba(92, 46, 126, 0.1);
+}
+
+.nav-pills-custom .nav-link.active {
+  background-color: var(--mw-red);
+  color: var(--mw-white);
+  border-color: var(--mw-red);
+  box-shadow: 0 0 10px rgba(200, 16, 46, 0.5);
+}
+
+/* --- BESTIARY SPLIT-SCREEN LIST --- */
+.bestiary-list .list-group-item {
+  background-color: #121212;
+  color: var(--mw-silver);
+  border: 1px solid #2a2a2a;
+  border-radius: 0;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.bestiary-list .list-group-item:hover {
+  background-color: #1a1a1a;
+  border-color: var(--mw-purple);
+}
+
+.bestiary-list .list-group-item.active {
+  background-color: var(--mw-purple);
+  color: var(--mw-white);
+  border-color: var(--mw-purple);
+}
+
+/* --- GLOSSARY TABLE --- */
+.table-meatworld {
+  color: var(--mw-silver);
+  border-color: #2a2a2a;
+}
+
+.table-meatworld thead th {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+  color: var(--mw-red);
+  border-bottom: 2px solid var(--mw-red);
+}
