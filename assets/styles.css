@@ -120,7 +120,7 @@ body {
 /* --- HOMEPAGE: HERO SECTION --- */
 .hero-section {
   /* Replace 'hero-bg.jpg' with a dark, gritty piece of environment art */
-  background: linear-gradient(to bottom, rgba(10, 10, 10, 0.6), var(--mw-black)), url('/assets/hero-bg.jpg') center/cover no-repeat;
+  background: var(--mw-black)), url('/assets/hero-bg.jpg') center/cover no-repeat;
   min-height: 75vh;
   display: flex;
   align-items: center;
