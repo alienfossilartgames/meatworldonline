@@ -1,18 +1,55 @@
 <footer class="footer-custom mt-auto">
-  <div class="container-fluid">
-    <div class="row align-items-center">
+  <div class="container-fluid py-4">
+    
+    <!-- Top Row: Logo, Newsletter, Legal Links (App Store Position) -->
+    <div class="row align-items-center mb-5">
       
-      <!-- Copyright Section (Left on desktop, centered on mobile) -->
-      <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+      <!-- Column 1: Logo -->
+      <div class="col-lg-4 text-center text-lg-start mb-4 mb-lg-0">
+        <a href="/" class="text-decoration-none">
+          <img src="/images/MW_LogoText.png" alt="MEATWORLD Logo" class="nav-logo" style="height: 60px; width: auto;">
+        </a>
+      </div>
+      
+      <!-- Column 2: Newsletter Sign-up -->
+      <div class="col-lg-4 text-center mb-4 mb-lg-0">
+        <h5 style="font-family: 'Bebas Neue', sans-serif; color: var(--mw-silver); letter-spacing: 1.5px;">SIGN UP FOR TRANSMISSIONS</h5>
+        <p class="copyright-text mb-3">Get all the news and announcements from the wastes.</p>
+        <div class="d-flex justify-content-center">
+          <input type="email" class="form-control" placeholder="Email Address" style="max-width: 250px; background-color: #121212; border: 1px solid #2a2a2a; color: var(--mw-white); border-radius: 0;" aria-label="Email Address">
+          <button class="btn btn-custom-red ms-2" type="button" style="font-size: 1.25rem; padding: 0.25rem 1.5rem;">JOIN</button>
+        </div>
+      </div>
+      
+      <!-- Column 3: Legal Links (Replaces App Store / Google Play Buttons) -->
+      <div class="col-lg-4 text-center text-lg-end d-flex flex-column align-items-center align-items-lg-end justify-content-center">
+        <!-- Using inline styles to change the color to necrotic purple and remove horizontal margins so they stack cleanly -->
+        <a href="/privacy" class="footer-link mb-2" style="color: var(--mw-purple) !important; margin: 0;">PRIVACY POLICY</a>
+        <a href="/tos" class="footer-link" style="color: var(--mw-purple) !important; margin: 0;">TERMS OF SERVICE</a>
+      </div>
+      
+    </div>
+    
+    <!-- Middle Row: Navigation Links (Mirrors Soundbooth's Menu) -->
+    <div class="row mb-4">
+      <div class="col-12 text-center d-flex flex-wrap justify-content-center gap-3">
+        <a href="/lore" class="footer-link mx-0">LORE</a>
+        <a href="/stories.html" class="footer-link mx-0">STORIES</a>
+        <a href="/map" class="footer-link mx-0">MAP</a>
+        <a href="/merch" class="footer-link mx-0">MERCH</a>
+        <a href="/about.html" class="footer-link mx-0">ABOUT</a>
+      </div>
+    </div>
+    
+    <!-- Divider Line -->
+    <hr style="border-color: var(--mw-red); opacity: 0.5;">
+    
+    <!-- Bottom Row: Copyright -->
+    <div class="row">
+      <div class="col-12 text-center">
         <span class="copyright-text">&copy; 2026 Alien Fossil Art & Games. All rights reserved.</span>
       </div>
-      
-      <!-- Legal Links (Right on desktop, centered on mobile) -->
-      <div class="col-md-6 text-center text-md-end">
-        <a href="/privacy" class="footer-link">PRIVACY POLICY</a>
-        <a href="/tos" class="footer-link">TERMS OF SERVICE</a>
-      </div>
-
     </div>
+    
   </div>
 </footer>
