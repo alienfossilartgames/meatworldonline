@@ -133,7 +133,7 @@ body {
 /* --- HOMEPAGE: HERO SECTION --- */
 .hero-section {
   /* Replace 'hero-bg.jpg' with a dark, gritty piece of environment art */
-  background: var(--mw-black)), url('/assets/hero-bg.jpg') center/cover no-repeat;
+  background: var(--mw-black)); /* ---url('/assets/hero-bg.jpg') center/cover no-repeat; --- */
   min-height: 75vh;
   display: flex;
   align-items: center;
