@@ -308,3 +308,11 @@ main {
     opacity: 0.4; 
   }
 }
+
+/* --- SIR CLANCY TEXT CLEARANCE --- */
+@media (min-width: 992px) {
+  /* Targets the right-side content panes on the Lore page only on desktop */
+  #lore-tabContent .col-md-8 .tab-content {
+    padding-right: 200px !important; 
+  }
+}
